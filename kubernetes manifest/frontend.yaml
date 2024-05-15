@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: srinu
+  namespace: priyanka
   labels:
     role: frontend
     env: demo
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: nasrinivas/frontend:12
+        image: priyanka9288/frontend
         imagePullPolicy: Always
         env:
         ports:
@@ -34,7 +34,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: frontend
-  namespace: srinu
+  namespace: priyanka
 spec:
   ports:
   - port: 3000
